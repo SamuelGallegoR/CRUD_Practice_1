@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD Operation With PostgreSQL</title>
+</head>
+<body>
+    <center>
+        <h1>How to create CRUD operation with PostgreSQL</h1>
+        <h3>Django Web Tutorials with the indian guy</h3>
+        <hr/>
+        <table border="1">
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Salary</th>
+                <th>Gender</th>
+            </tr>
+            {% for result in data %}
+            <tr>
+                <td>{{result.id}}</td>
+                <td>{{result.empname}}</td>
+                <td>{{result.email}}</td>
+                <td>{{result.occupation}}</td>
+                <td>{{result.salary}}</td>
+                <td>{{result.gender}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
